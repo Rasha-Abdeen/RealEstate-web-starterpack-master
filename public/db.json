@@ -1,0 +1,20 @@
+[
+    {
+      "id":1,
+      "apartment":" Dundalk phlips street",
+      "Price": "$1200",
+      "bedrooms":3
+    },
+    {
+       "id":2,
+      "apartment":" Dublin Road street",
+      "Price": "$2200",
+      "bedrooms":3
+    },
+    {
+     "id":2,
+      "apartment":" letterkenny 1 street",
+      "Price": "$1200",
+      "bedrooms":3
+    }
+]
