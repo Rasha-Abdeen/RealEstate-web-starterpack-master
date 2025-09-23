@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
 
 const hero = () => {
 return (
@@ -9,15 +10,23 @@ return (
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             display: 'flex',
+            flexDirection:'column',
             justifyContent: 'center',
             alignItems: 'center',
             height: '100vh',
         }}
     >
-        <div className='hero' style={{ textAlign: 'center', color: '#fff' }}>
+        <div className='hero' style={{ textAlign: 'center', color: '#fff' , marginBottom:"20px" }}>
             <h1>Your Dream Home Awaits</h1>
             <p>Discover the best properties in town with us.</p>
-            <button className='cta-btn'>Get Started</button>
+        </div>
+        <div className='search-button' style={{display:"flex", gap:"10px"}} >
+        <Button variant="outline-light"> Looking To Sell </Button>
+        <Button variant="outline-light"> Looking To Buy </Button>
+        <Button variant="outline-light"> Looking To Let </Button>
+        <Button variant="outline-light"> Looking To Rent </Button>
+
+
         </div>
     </div>
 )
