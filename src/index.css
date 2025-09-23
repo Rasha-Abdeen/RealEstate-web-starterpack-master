@@ -129,6 +129,12 @@ a {
   padding: 1rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Separator between items */
 }
+.search-button{
+  @media screen and (max-width: 768px) {
+    display: none; /* Hide search button on small screens */
+    
+  }
+}
 
 /* Logo */
 .header .logo {

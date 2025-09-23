@@ -21,10 +21,10 @@ return (
             <p>Discover the best properties in town with us.</p>
         </div>
         <div className='search-button' style={{display:"flex", gap:"10px"}} >
-        <Button variant="outline-light"> Looking To Sell </Button>
-        <Button variant="outline-light"> Looking To Buy </Button>
-        <Button variant="outline-light"> Looking To Let </Button>
-        <Button variant="outline-light"> Looking To Rent </Button>
+        <Button variant="outline-light" style={{border: '2px solid', fontSize:'20px'}}> Looking To Sell > </Button>
+        <Button variant="outline-light" style={{border: '2px solid', fontSize:'20px'}}> Looking To Buy > </Button>
+        <Button variant="outline-light" style={{border: '2px solid', fontSize:'20px'}}> Looking To Let > </Button>
+        <Button variant="outline-light" style={{border: '2px solid', fontSize:'20px'}}> Looking To Rent > </Button>
 
 
         </div>
