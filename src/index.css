@@ -110,7 +110,7 @@ a {
   justify-content: flex-start; /* Align items to the left */
   align-items: center;
   padding: 0 2rem; /* Add some breathing room left & right */
-  background-color: var(--primary);
+  background-color: var(--black);
   @media screen and (max-width: 768px) {
     display: none; /* Hide header on small screens */
     
@@ -152,6 +152,12 @@ a {
 
 
 }
+.register{
+  margin-left: auto; /* Pushes register to the far right */
+  font-size: 18px;
+  color:rgba(220, 224, 12, 0.858);
+
+}
 .logo-mobile{
   width: 120px;
   height:auto;;
@@ -166,7 +172,7 @@ a {
   margin-left: auto; /* Pushes contact button to the far right */
   padding: 0rem 1rem;
   font-size: 18px;
-  color:rgb(20, 73, 189);
+  color:rgba(220, 224, 12, 0.858);
 
 }
 .header-mobile{
@@ -185,7 +191,11 @@ a {
 
 
 
-
+.sticky{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
 
 .cta-btn{

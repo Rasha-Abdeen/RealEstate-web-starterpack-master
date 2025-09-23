@@ -1,10 +1,4 @@
 import React from 'react'
-
-
-
-
-
-
 import Hamburger from 'hamburger-react'
 import { useState } from 'react'
 const header = () => {
@@ -12,7 +6,7 @@ const header = () => {
   const [isopen, setisopen] = useState(false);
   return (
     <>
-    <div className='header'>
+    <div className='header sticky'>
       <img className="logo" src= '../public/logo.png' alt="logo" />
       <nav className="nav">
     <a href="#">Home</a>
@@ -22,9 +16,10 @@ const header = () => {
     <a href="#">Commercial</a>
     <a href="#">Blog</a>
      </nav>
-     <button className="contact-btn">Contact</button>
-
+   <a href ="#" className='contact-btn' > Login |</a>  <a href ="#" className='register'> Register </a>
     </div>
+
+
     <div className='header-mobile'>
     <img className="logo-mobile" src= '../public/logo.png' alt="logo" />
     <Hamburger toggled={isopen} toggle={setisopen} color=' #d1c601' />
