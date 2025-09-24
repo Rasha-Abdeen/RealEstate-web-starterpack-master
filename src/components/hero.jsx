@@ -17,7 +17,7 @@ return (
         }}
     >
         <div className='hero' style={{ textAlign: 'center', color: '#fff' , marginBottom:"20px" }}>
-            <h1>Your Dream Home Awaits</h1>
+            <h1>We have the property just for you</h1>
             <p>Discover the best properties in town with us.</p>
         </div>
         <div className='search-button' style={{display:"flex", gap:"10px"}} >
