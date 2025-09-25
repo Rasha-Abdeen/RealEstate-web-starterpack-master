@@ -45,7 +45,7 @@ const accordin = () => {
 
   return (
   
-    <div className='accordin-container' style={{marginBottom:"10px",padding:"20px"}} >
+    <div className='accordin-container' >
         <div className='flex-left'>
             <img src='./hero-image.png' alt='accordin image' style={{width:"750px", height:"500px", borderRadius:"30px"}}></img>
         </div>
@@ -66,7 +66,7 @@ const accordin = () => {
                     </div>
                 ))}
 
-                <button> About US</button>
+                <button className='read-more'> About Us</button>
            
         </div>
 

@@ -29,6 +29,7 @@ const reviews = [
 const Footer = () => {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
   const [ratings, setRatings] = useState({});
+  
   const position= {lat: 51.5074, lng: -0.1278};
   const [openInfo, setopenIfo] = useState(false);
 
@@ -67,32 +68,39 @@ const Footer = () => {
     <>
     <div className="reviews-section">
       <div className="reviews-item">
-        <h2 style={{textAlign:"center", fontSize:"34px", fontWeight:"bold", marginBottom:"20px", color:"#fffeee" }}>
-          Customer Reviews
+        <h2 style={{textAlign:"center", fontSize:"48px", fontWeight:"bold", marginBottom:"50px", color:"#fffeee"}}>
+          Our Reviews
         </h2>
 
-        <div key={currentReview.id} className="space-y-4">
+        <div key={currentReview.id} className='review-card' style={{textAlign:"center"}}>
           <img
             src={currentReview.avatar}
             alt={currentReview.name}
-            className="w-20 h-20 mx-auto rounded-full object-cover mb-4 border-2 border-gray-300"
+            className="review-avatar"
           />
-          <h2 className="text-xl font-semibold text-gray-800">
+          <h2 >
             {currentReview.name}
           </h2>
-          <p className="text-gray-1600 italic">"{currentReview.comment}"</p>
+          <p style={{ fontSize:"30px", color:"darkblue"}}>"{currentReview.comment}"</p>
+          <div className='rating' style={{fontSize:"24px", color:"#d1c601"}}>
+            {"*".repeat(currentReview.rating)}
+          </div>
+          <div className="review-navigation">
+            <button onClick={handlePrevious} className='nav-button' style={{marginRight:"30px"}}>Previous</button>
+            <button onClick={handleNext} className='nav-button'>Next</button>
+          </div>
         </div>
       </div>
     </div>
     <div className='footer'>
         <div className='contact-form'>
-          <h3>Contact Us</h3>
-          <form style={{display:"flex", flexDirection:"column", gap:"10px"}}>
+          <h3 style={{color:"black"}}>Contact Us</h3>
+          <form style={{display:"flex", flexDirection:"column", gap:"10px" , width:"500px", padding:"20px"}}>
             <input type="text" placeholder='Name' required/>
             <input type="email" placeholder='Email' required/>
             <textarea placeholder='Message' required>
             </textarea>
-            <button type='submit'>Submit</button>
+            <button type='submit' className='read-more'>Submit</button>
           </form>
             
         </div>

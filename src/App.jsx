@@ -5,6 +5,7 @@ import Slider from "./components/slider";
 import Accordin from "./components/accordin";
 import Cta from "./components/cta";
 import Footer from "./components/footer"
+import Footernav from './components/footernav';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Cta/>
     <Accordin/>
     <Footer/>
+    <Footernav/>
     </>
   );
 }
