@@ -13,8 +13,8 @@ function App() {
     <Header/>
     <Hero/>
     <Slider/>
-    <Accordin/>
     <Cta/>
+    <Accordin/>
     <Footer/>
     </>
   );
