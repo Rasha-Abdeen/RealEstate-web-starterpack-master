@@ -32,12 +32,7 @@ a {
   color: white;
   margin-top: 80px;
   margin-bottom: 80px;
-  gap: 20px;;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
+  gap: 20px;
   
 }
 .contact-form{
@@ -259,6 +254,11 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  .footer{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
  
 
   .card {
@@ -322,10 +322,6 @@ margin-bottom: 40px;
   align-items: center;
   padding: 0 2rem; /* Add some breathing room left & right */
   background-color: var(--black);
-  @media screen and (max-width: 768px) {
-    display: none; /* Hide header on small screens */
-    
-  }
 }
 .footernavbar{
   display: flex;
@@ -335,10 +331,6 @@ margin-bottom: 40px;
   background-color: var(--black);
   gap: 20px;
   flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-  @media screen and (max-width: 768px) {
-    flex-direction: column; /* Stack items vertically on small screens */
-    text-align: center;     /* Center text for better readability */
-  }
 }
 .footer-aboutus{
   display: flex;
@@ -380,10 +372,12 @@ margin-bottom: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Separator between items */
 }
 .search-button{
-  @media screen and (max-width: 768px) {
-    display: none; /* Hide search button on small screens */
-    
-  }
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 10px;
 }
 
 /* Logo */
@@ -433,16 +427,8 @@ margin-bottom: 40px;
 }
 .header-mobile{
   display: none; /* Hidden by default */
-  @media screen and (max-width: 768px) {
-    display: flex; /* Show on small screens */
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--black);
-    position: relative; /* For positioning the mobile menu */
-    z-index: 1000; /* Ensure it stays above other content */
-    
-  }
+
+
 }
 
 
@@ -540,6 +526,25 @@ margin-bottom: 40px;
 @media (min-width: 1280px), (min-width: 768px) {
   .paddings {
     padding: 2rem;
+  }
+  .header{
+    display: none;
+  }
+  .footernavbar{
+    flex-direction: column; /* Stack items vertically on small screens */
+    text-align: center;     /* Center text for better readability */
+  }
+  .search-button{
+    display: none;
+  }
+  .header .contact-btn{
+    display: flex; /* Show on small screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--black);
+    position: relative; /* For positioning the mobile menu */
+    z-index: 1000; /* Ensure it stays above other content */
   }
 }
 
