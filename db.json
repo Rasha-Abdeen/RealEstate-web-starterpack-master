@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "company": "Dundalk Properties",
+    "testimonial": "Homyz made buying our apartment on Philips Street seamless and stress-free.",
+    "location": "Dundalk, Ireland",
+    "description": "Our team worked closely with Dundalk Properties to find the ideal apartment for our client. Homyz ensured every step of the process was smooth, from viewing to closing."
+  },
+  {
+    "id": 2,
+    "company": "Dublin Realty",
+    "testimonial": "Thanks to Homyz, our clients found the perfect home on Dublin Road quickly.",
+    "location": "Dublin, Ireland",
+    "description": "Dublin Realty partnered with Homyz to provide expert guidance in purchasing homes. Clients appreciated the personalized support and fast response times."
+  },
+  {
+    "id": 3,
+    "company": "Letterkenny Homes",
+    "testimonial": "Homyz guided us expertly through selling our property on Letterkenny Street.",
+    "location": "Letterkenny, Ireland",
+    "description": "Letterkenny Homes worked with Homyz to ensure a smooth selling process. Homyz's team offered professional advice, market insights, and hands-on assistance throughout."
+  }
+]
