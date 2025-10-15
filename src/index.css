@@ -335,7 +335,7 @@ margin-bottom: 40px;
 .footer-aboutus{
   display: flex;
   flex-direction: column;
-  height: 100%;
+
   width: 34%;
   color: white;
 }
@@ -343,7 +343,7 @@ margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   width: 32;
-  height: 100%;
+  
   color: white;
   margin-right: 50px;
 
@@ -352,8 +352,8 @@ margin-bottom: 40px;
 .footer-contact{
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 33.3%;
+
+  width: 34%;
   color: white;
 
 
@@ -531,10 +531,7 @@ margin-bottom: 40px;
     padding: 2rem;
   }
  
-  .footernavbar{
-    flex-direction: column; /* Stack items vertically on small screens */
-    text-align: center;     /* Center text for better readability */
-  }
+  
   .search-button{
     display: none;
   }
@@ -561,5 +558,9 @@ margin-bottom: 40px;
   }
   .header{
     display: none;
+  }
+  .footernavbar{
+    flex-direction: column; /* Stack items vertically on small screens */
+    text-align: center;     /* Center text for better readability */
   }
 }
