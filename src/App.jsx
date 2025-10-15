@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./components/header";
+import Header from "c";
 import Hero from "./components/hero";
 import Slider from "./components/slider";
 import Accordin from "./components/accordin";
