@@ -426,7 +426,10 @@ margin-bottom: 40px;
 
 }
 .header-mobile{
-  display: none; /* Hidden by default */
+ color:rgba(220, 224, 12, 0.858);
+ background-color: #131110;
+
+
 
 
 }
@@ -527,9 +530,7 @@ margin-bottom: 40px;
   .paddings {
     padding: 2rem;
   }
-  .header{
-    display: none;
-  }
+ 
   .footernavbar{
     flex-direction: column; /* Stack items vertically on small screens */
     text-align: center;     /* Center text for better readability */
@@ -546,6 +547,9 @@ margin-bottom: 40px;
     position: relative; /* For positioning the mobile menu */
     z-index: 1000; /* Ensure it stays above other content */
   }
+  .header-mobile{
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {
@@ -554,5 +558,8 @@ margin-bottom: 40px;
   }
   .orangeText {
     font-size: 1.2rem;
+  }
+  .header{
+    display: none;
   }
 }
